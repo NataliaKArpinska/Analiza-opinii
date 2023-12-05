@@ -11,3 +11,6 @@ tweets_df = pd.DataFrame(attributes_container, columns=["User", "Date Created", 
 
 # 1. Preprocessing
 Po pobraniu wszytskich tweetów przefiltrowałam je i skupiłam się tylko na tweetach anglojęzycznych. Zmieniłam także ich indeksy.
+
+tweets_df = tweets_df[tweets_df['Lang'] == 'en']
+tweets_df.index = range(0,34185)
