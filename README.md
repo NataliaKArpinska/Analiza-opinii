@@ -6,3 +6,5 @@ Pobrałam bazę około 40 tys. tweetów na temat nierówności na tle rasowym, g
 Następnie przeanalizowałam jaką opinię mają użytkownicy twittera na ten temat.
 
 Pobrałam wszytskie tweety przy pomocy biblioteki snscrape i utworzyłam DataFrame z nazwą użytkownika, czasem wpisu, liczbą polubień, językiem w jakim jest tweet, miejscem skąd został napisany oraz samym tweetu.
+
+tweets_df = pd.DataFrame(attributes_container, columns=["User", "Date Created", "Number of Likes", "Lang",'Place', "Tweet"])
